@@ -1,0 +1,4 @@
+gunicorn
+django
+pip freeze
+whitenoise
