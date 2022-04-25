@@ -44,8 +44,7 @@ def get_name(request):
 			n = form.cleaned_data["name"]
 			t = ToDoList(name=n, date=timezone.now())
 			t.save()
-			messages.success(request, "Кор кад!")
-			messages.info(request, f'Ассалому алейкум {t}.')
+			messages.success(request, f'Ассалому алейкум {t}.')
 			
 			
 			
