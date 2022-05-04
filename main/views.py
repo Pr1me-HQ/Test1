@@ -59,7 +59,3 @@ def get_name(request):
 def home(request):
 	return render(request, "main/home.html", {})
 
-
-def view(request):
-	l = ToDoList.objects.all()
-	return render(request, "main/view.html", {"lists":l})
